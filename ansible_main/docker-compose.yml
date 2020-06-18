@@ -5,7 +5,7 @@ services:
     build:
       ./ansible
     volumes:
-      - ~/Documents/Automation:/home/ansible/Automation
+      - /Docker/ansible:/home/ansible/Automation
       - ~/.ssh:/home/ansible/.ssh
       - ~/.gitconfig:/home/ansible/.gitconfig
     stdin_open: true
